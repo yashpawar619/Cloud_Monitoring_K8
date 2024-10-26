@@ -1,54 +1,43 @@
 Cloud Native Resource Monitoring App Using K8s
 
-Overview
-This project demonstrates how to create a monitoring application using Python, Flask, and psutil. It includes steps to run the application locally, containerize it using Docker, and deploy it to AWS ECR and EKS.
+# Monitoring Application in Python with Docker and Kubernetes
 
-Contents
-Create Monitoring Application: Build a Python app using Flask and psutil to monitor system metrics.
+This project is a Python-based monitoring application built using Flask and `psutil`. It showcases a complete workflow, from local development to containerization with Docker, image management with AWS ECR, and deployment in a Kubernetes cluster on AWS EKS.
 
-Run Locally: Instructions to run the Python app on your local machine.
+## Table of Contents
+1. [Overview](#overview)
+2. [Getting Started](#getting-started)
+   - [Running the App Locally](#running-the-app-locally)
+3. [Docker](#docker)
+   - [Containerizing the Application](#containerizing-the-application)
+   - [Dockerfile Creation](#dockerfile-creation)
+   - [Building Docker Image](#building-docker-image)
+   - [Running Docker Container](#running-docker-container)
+   - [Common Docker Commands](#common-docker-commands)
+4. [AWS ECR and Image Push](#aws-ecr-and-image-push)
+   - [Creating an ECR Repository using Boto3](#creating-an-ecr-repository-using-boto3)
+   - [Pushing Docker Image to ECR](#pushing-docker-image-to-ecr)
+5. [Kubernetes](#kubernetes)
+   - [Creating EKS Cluster and Nodegroups](#creating-eks-cluster-and-nodegroups)
+   - [Deploying to Kubernetes with Python](#deploying-to-kubernetes-with-python)
+6. [Contributing](#contributing)
+7. [License](#license)
 
-Learn Docker: How to containerize the Python application, create a Dockerfile, build Docker images, and run Docker containers.
+---
 
-Docker Commands: Useful Docker commands for managing your containers.
+## Overview
+This repository includes:
+- A Flask application using `psutil` for monitoring system metrics.
+- Docker setup for containerizing the application.
+- Scripts to create an ECR repository, push Docker images, and deploy the application on EKS using Kubernetes.
 
-AWS ECR Integration: Use Python Boto3 to create an ECR repository and push Docker images.
+---
 
-Learn Kubernetes: Instructions for creating an EKS cluster, node groups, and deploying Kubernetes services and deployments using Python.
+## Getting Started
 
-Getting Started
-Follow the steps below to get started with the project:
+### Running the App Locally
 
-Setting Up:
-
-Ensure you have Python and Docker installed.
-
-Clone this repository.
-
-Creating the Monitoring Application:
-
-Build a monitoring application using Flask and psutil.
-
-Running Locally:
-
-Instructions to run the application on your local machine.
-
-Dockerizing the Application:
-
-Create a Dockerfile for the application.
-
-Build Docker images.
-
-Run Docker containers.
-
-Pushing to ECR:
-
-Use Boto3 to create an ECR repository.
-
-Push Docker images to ECR.
-
-Deploying on Kubernetes:
-
-Create an EKS cluster and node groups.
-
-Deploy the application using Kubernetes deployments and services.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/yourrepository.git
+   cd yourrepository
