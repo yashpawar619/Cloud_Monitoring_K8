@@ -1,0 +1,54 @@
+Cloud Native Resource Monitoring App Using K8s
+
+Overview
+This project demonstrates how to create a monitoring application using Python, Flask, and psutil. It includes steps to run the application locally, containerize it using Docker, and deploy it to AWS ECR and EKS.
+
+Contents
+Create Monitoring Application: Build a Python app using Flask and psutil to monitor system metrics.
+
+Run Locally: Instructions to run the Python app on your local machine.
+
+Learn Docker: How to containerize the Python application, create a Dockerfile, build Docker images, and run Docker containers.
+
+Docker Commands: Useful Docker commands for managing your containers.
+
+AWS ECR Integration: Use Python Boto3 to create an ECR repository and push Docker images.
+
+Learn Kubernetes: Instructions for creating an EKS cluster, node groups, and deploying Kubernetes services and deployments using Python.
+
+Getting Started
+Follow the steps below to get started with the project:
+
+Setting Up:
+
+Ensure you have Python and Docker installed.
+
+Clone this repository.
+
+Creating the Monitoring Application:
+
+Build a monitoring application using Flask and psutil.
+
+Running Locally:
+
+Instructions to run the application on your local machine.
+
+Dockerizing the Application:
+
+Create a Dockerfile for the application.
+
+Build Docker images.
+
+Run Docker containers.
+
+Pushing to ECR:
+
+Use Boto3 to create an ECR repository.
+
+Push Docker images to ECR.
+
+Deploying on Kubernetes:
+
+Create an EKS cluster and node groups.
+
+Deploy the application using Kubernetes deployments and services.
